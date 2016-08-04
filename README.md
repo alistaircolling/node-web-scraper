@@ -1,2 +1,4 @@
 **Web Scraper**
-Goes and checks if a string exists on a URL.
+Checks if a specific image and class exist on an image element at a specific URL.
+Currently checking when wetsuits come in stock! 🏊
+
