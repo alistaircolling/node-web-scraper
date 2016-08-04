@@ -1,4 +1,4 @@
-***Web Scraper***
+**Web Scraper**
 
 Checks if a specific image and class exist on an image element at a defined URL.
 
