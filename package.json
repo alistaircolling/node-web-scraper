@@ -1,0 +1,23 @@
+{
+  "name": "scrape",
+  "version": "1.0.0",
+  "description": "**Web Scraper** Goes and checks if a string exists on a URL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alistaircolling/node-scrape.git"
+  },
+  "author": "Alistair Colling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alistaircolling/node-scrape/issues"
+  },
+  "homepage": "https://github.com/alistaircolling/node-scrape#readme",
+  "devDependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.74.0"
+  }
+}
