@@ -1,16 +1,27 @@
 var request = require("request");
 var cheerio = require("cheerio");
 
+console.log('hello node scraper');
+
 request({
-  uri: "http://www.sitepoint.com",
-}, function(error, response, body) {
-  var $ = cheerio.load(body);
+    uri: "https://www.alpkit.com/products/returned-lotic-wetsuit-mens",
+},
 
-  $(".entry-title > a").each(function() {
-    var link = $(this);
-    var text = link.text();
-    var href = link.attr("href");
+function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log('success!');
+            var $ = cheerio.load(body);
+            var hasSoldOut = $('img').attr('class', 'sold-out');
+            console.log(hasSoldOut);
+        }else{
+            console.log('error');
+        }
+    }
+);
 
-    console.log(text + " -> " + href);
-  });
-});
+//var cheerio = require("cheerio");
+//var html = "<ul><li>foo</li><li>bar</li></ul>";
+//var $ = cheerio.load(html);
+//var list = $("ul");
+
+//console.log(list.html());
